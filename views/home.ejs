@@ -1,1 +1,17 @@
 <%- include("partials/header.ejs") %>
+
+<% for (var i = 0; i < 6; i++) { %>
+    <%- include("partials/cards.ejs") %>
+<% } %>
+
+<script>
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.color = 'yellow';
+        });
+        item.addEventListener('mouseout', () => {
+            item.style.color = 'white';
+        });
+    });
+</script>
+<%- include("partials/footer.ejs") %>

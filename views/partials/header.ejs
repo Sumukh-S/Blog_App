@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Node.js CRUD App</title>
-    <link rel="stylesheet" href="/styles/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/home.css">
 </head>
 <body>
     <header class="p-3 text-bg-dark">
@@ -19,13 +19,12 @@
                         <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
-    
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="home" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="tech-news" class="nav-link px-2 text-white">Tech-news</a></li>
+                    <li><a href="home" class="nav-link nav-link-hover nav-link px-2 text-secondary" style="--bs-link-hover-color-rgb: 0, 135, 0;">Home</a></li>
+                    <li><a href="tech-news" class="nav-link nav-link-hover px-2 text-white" style="--bs-link-hover-color-rgb: 0, 135, 0;">Tech-news</a></li>
                     <li><a href="latest" class="nav-link px-2 text-white">Latest</a></li>
                     <li><a href="contact" class="nav-link px-2 text-white">Contact</a></li>
-                    <li><a href="about" class="nav-link px-2 text-white">About</a></li>
+                    <li><a href="about" id="j" class="nav-link px-2 text-white">About</a></li>
                 </ul>
     
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -39,4 +38,4 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>   
